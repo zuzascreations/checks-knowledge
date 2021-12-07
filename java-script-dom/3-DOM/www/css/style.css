@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:darkkhaki;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.oclock {
+    background-color:darksalmon;
+    border: solid 7px black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}

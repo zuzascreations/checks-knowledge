@@ -1,0 +1,122 @@
+/* Grid areas */
+body {
+    min-width: 320px;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: 5rem 1fr 2rem;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+body nav {
+    grid-area: aside;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header form {
+    display: flex;
+}
+
+header input {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+header button {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+header menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+header li {
+    display: flex;
+    justify-content: center;
+}
+
+/* Main */
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    flex:1 1 auto
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Media query */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        grid-template-rows: 10rem 2rem 1fr 2rem;
+        grid-template-areas:
+            "header header"
+            "aside aside"
+            "main main"
+            "footer footer";
+    }
+    body nav menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 320px) and  (max-width: 375px) and (orientation: portrait) {
+    footer {
+        gap: 1rem
+    }
+}
+
+@media screen and (max-width: 320px) and (orientation: portrait) {
+    footer {
+        gap: 0.5rem
+    }
+}

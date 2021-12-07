@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen-1-HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Debrable</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#articulo1">Mi top 10 películas</a>
+          </li>
+          <li>
+            <a href="#articulo2">Mi viaje a Japón</a>
+          </li>
+          <li>
+            <a href="#formulario">Mándame un mensaje</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <aside>
+          <ul>
+            <!-- el blogger photo me gustaría introducir tras css como background img. -->
+            <li id="blogger-photo"></li>
+            <li>
+              <h2>Debra Smith</h2>
+            </li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </li>
+            <li>
+              <a href="/">debra.smith2example.com</a>
+            </li>
+          </ul>
+        </aside>
+        <article id="articulo1">
+          <h3>Mi top 10 películas</h3>
+          <ol>
+            <li>El padrino</li>
+            <li>La lista de Schindler</li>
+            <li>El padrino. Parte II</li>
+            <li>Cadena perpetua</li>
+            <li>Pulp Fiction</li>
+            <li>El Rey León</li>
+            <li>Forrest Gump</li>
+            <li>La vida es bella</li>
+            <li>Gladiator</li>
+            <li>Coco</li>
+          </ol>
+        </article>
+        <article id="articulo2">
+          <h3>Mi viaje a Japón</h3>
+          <img src="images/japon.jpeg" alt="Photo-Japon">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit dolore autem cupiditate laudantium nulla veritatis dolorum, cumque similique necessitatibus adipisci odit ducimus tenetur numquam? Hic ipsam voluptates deleniti totam delectus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Velit dolore autem cupiditate laudantium nulla veritatis dolorum, cumque similique necessitatibus adipisci odit ducimus tenetur numquam? Hic ipsam voluptates deleniti totam delectus.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis facilis placeat velit saepe facere aut modi, aperiam reiciendis quibusdam, a totam assumenda at. Vitae dicta error facilis maiores laborum. Velit dolore autem cupiditate laudantium nulla veritatis dolorum, cumque similique necessitatibus adipisci odit ducimus tenetur numquam? Hic ipsam voluptates deleniti totam delectus.</p>
+        </article>
+      </section>
+      <section>
+        <form action="/" id="formulario" method="post">
+          <h3>Mándame un mensaje</h3>
+          <ul class="required">
+            <li>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </li>
+            <li>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </li>
+            <li>
+              <label for="nacimiento">Fecha de nacimiento:</label>
+              <input type="date" id="nacimiento" name="nacimiento" required>
+            </li>
+          </ul>
+          <label for="comentarios">Comentarios:</label>
+          <br>
+          <textarea name="comentarios" placeholder="Escribe aquí todo lo que quieras..." id="comentarios" cols="30" rows="10"></textarea>
+          <ul class="enviar">
+            <li>
+              <label for="newsletter">Suscribirse a newsletter</label>
+              <input type="checkbox" id="newsletter" name="newsletter">
+            </li>
+            <li>
+              <button>Enviar</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <footer>
+        <p>Términos y condiciones | Política de privacidad</p>
+    </footer>
+  </body>
+</html>
